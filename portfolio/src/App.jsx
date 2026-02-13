@@ -41,63 +41,61 @@ export default function App() {
 
       {/* NAVBAR */}
       <nav className="navbar">
-        <h1 className="logo">Deepthi</h1>
+  <h1 className="logo">Deepthi</h1>
 
-        <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        <a
-  href="/resume.pdf"
-  target="_blank"
-  rel="noreferrer"
-  className="resume-btn"
->
-  Resume
-</a>
+  <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-        </div>
+  <div className="nav-actions">
+    <a
+      href="/resume.pdf"
+      target="_blank"
+      rel="noreferrer"
+      className="resume-btn"
+    >
+      Resume
+    </a>
 
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
-        </div>
-      </nav>
-
-      <section id="home" className="section home">
+    <button
+      className="hamburger"
+      onClick={() => setMenuOpen(!menuOpen)}
+      aria-label="Menu"
+    >
+      ☰
+    </button>
+  </div>
+</nav>
+<section id="home" className="section home">
   <motion.h2
-    initial={{ opacity: 0, y: 24 }}
+    initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
+    transition={{ duration: 0.8 }}
   >
-    Hi, I am <span>Deepthi Allamudi</span>
+    Hi, I’m <span>Deepthi Allamudi</span>
   </motion.h2>
 
   <motion.p
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ delay: 0.4, duration: 0.8 }}
+    transition={{ delay: 0.4 }}
     className="subtitle"
   >
-    I build clean, scalable, and user-friendly web applications.
+    I build modern, scalable & user-friendly web applications.
   </motion.p>
 
   <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ delay: 0.8 }}
+    animate={{ y: [0, -6, 0] }}
+    transition={{ repeat: Infinity, duration: 2 }}
   >
-    <a href="#projects" className="btn">See My Work</a>
-  </motion.div>
-
-  <motion.div
-  className="dev-animation"
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 1.2 }}
->
+    
   👩‍💻 <span>const developer = "Deepthi";</span>
+    <a href="#projects" className="btn">View My Work</a>
+
 </motion.div>
 
 </section>
