@@ -32,6 +32,12 @@ export default function App() {
 
   return (
     <>
+    {/* Animated Gradient Blobs */}
+<div className="blobs">
+  <div className="blob blob-yellow"></div>
+  <div className="blob blob-pink"></div>
+</div>
+
       {/* Floating Background Shapes */}
       <div className="floating-shapes">
         <span className="shape shape-1"></span>
@@ -85,7 +91,7 @@ export default function App() {
     transition={{ delay: 0.4 }}
     className="subtitle"
   >
-    I build modern, scalable & user-friendly web applications.
+    A Full Stack Web Developer
   </motion.p>
 
   <motion.div
