@@ -93,7 +93,7 @@ export default function App() {
     transition={{ repeat: Infinity, duration: 2 }}
   >
     
-  👩‍💻 <span>const developer = "Deepthi";</span>
+  👩‍💻 <span>const developer = "Deepthi";</span><br>  </br>
     <a href="#projects" className="btn">View My Work</a>
 
 </motion.div>
